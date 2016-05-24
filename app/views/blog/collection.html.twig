@@ -1,0 +1,16 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <h1>All posts</h1>
+    {% if posts is not empty %}
+        {% for post in posts %}
+            <article>
+                <h2>{{ post.getTitle }}</h2>
+                <div>{{ post.getContent }}</div>
+                <a href="{{ path('blog.view', {id: post.getId.getId}) }}">Read post</a>
+            </article>
+        {% endfor %}
+    {% else %}
+        There are no posts at the moment
+    {% endif %}
+{% endblock %}

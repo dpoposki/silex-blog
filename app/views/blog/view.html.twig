@@ -1,0 +1,10 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    {% if post is not empty %}
+        <article>
+            <h2>{{ post.getTitle }}</h2>
+            <div>{{ post.getContent }}</div>
+        </article>
+    {% endif %}
+{% endblock %}

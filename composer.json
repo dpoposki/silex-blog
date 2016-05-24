@@ -1,0 +1,20 @@
+{
+    "name": "poposki/silex-blog",
+    "type": "library",
+    "description": "Dev share talk on how to build a decoupled blog module",
+    "homepage": "https://github.com/dpoposki",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Darko Poposki",
+            "email": "darko.poposki+github@sitewards.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "poposki/blog": "^0.1",
+        "silex/silex": "~2.0",
+        "symfony/twig-bridge": "~3.0",
+        "twig/twig": "^1.24"
+    }
+}
